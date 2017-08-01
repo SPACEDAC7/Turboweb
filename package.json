@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --disable-host-check",
-    "build": "ng build",
+    "build": "ng build --prod",
+    "build-prod":"rm -rf ./dist/*  && ng build --prod && cp -rf /root/turboweb/dist/* /var/www/html/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
