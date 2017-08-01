@@ -55,6 +55,10 @@
   },
   "defaults": {
     "styleExt": "sass",
-    "component": {}
+    "component": {},
+    "serve": {
+      "port": 4201,
+      "host": "127.0.0.1"
+    }
   }
 }
