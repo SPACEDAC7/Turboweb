@@ -1,6 +1,6 @@
 {
   "name": "turboweb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -22,6 +22,9 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.2",
+    "pug-cli": "^1.0.0-alpha6",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"
   },
@@ -44,6 +47,7 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
-    "typescript": "~2.3.3"
+    "typescript": "~2.3.3",
+    "webpack": "^3.4.1"
   }
 }
