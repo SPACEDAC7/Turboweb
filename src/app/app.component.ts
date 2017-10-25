@@ -25,7 +25,7 @@ export class AppComponent {
     // Se declara cómo va a ser la llamada
     // ocultando los pormenores a los consumidores
     // En este momento aún no se efectuó la llamada
-    this.memberService.getMemberTest("miembros/miembro").then(res => {
+    this.memberService.getMemberTest("miembros/miembro").subscribe(res => {
       console.log("Hola");
       this.prueba = res;
     });

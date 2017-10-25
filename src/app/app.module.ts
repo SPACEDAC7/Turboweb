@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule, Http } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MemberListComponent } from './components/member-list/member-list.component';
-import {MemberService} from "./services/member.service";
+import { MemberService } from "./services/member.service";
 
 @NgModule({
   declarations: [
@@ -15,7 +15,6 @@ import {MemberService} from "./services/member.service";
     HttpModule,
   ],
   providers: [
-    Http,
     MemberService
   ],
   bootstrap: [AppComponent]

@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
-import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch'
 import {Member} from "../models/member";
+import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class MemberService {
@@ -12,9 +14,11 @@ export class MemberService {
   constructor(private http: Http) {
   }
 
-  getMemberTest(search: String): Promise<Member> {
+  getMemberTest(search: String): Observable<Member> {
+    console.log("getMemberTest");
     const url = `${this.articleUrl}/${search}`;
-    return this.http.get(url).toPromise().then(response => response.json() as Member)
+    return this.http.get(url)
+      .map(response => response.json())
       .catch(this.handleError);
   }
 
