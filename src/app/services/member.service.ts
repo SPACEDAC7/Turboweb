@@ -14,9 +14,9 @@ export class MemberService {
   constructor(private http: Http) {
   }
 
-  getMemberTest(search: String): Observable<Member> {
-    console.log("getMemberTest");
-    const url = `${this.articleUrl}/${search}`;
+  getAllMembers(): Observable<Member> {
+    console.log("getAllMembers");
+    const url = `${this.articleUrl}/miembros/miembro`;
     return this.http.get(url)
       .map(response => response.json())
       .catch(this.handleError);
