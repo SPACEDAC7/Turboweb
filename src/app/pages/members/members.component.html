@@ -4,7 +4,16 @@
   </h1>
 </div>
 <ul>
-  <li *ngFor="let member of miembros">
-    {{member.nombre}} --> {{member.biografia}}
+  <li *ngFor="let miembro of miembros">
+    {{miembro.nombre}} --> {{miembro.biografia}}
   </li>
 </ul>
+
+<div class="container">
+  <!--<form #regForm='ngForm' (ngSubmit)="Register(regForm)" >
+    <h2 class="text-center">Registration page</h2>
+    <input type="text" class="form-control" placeholder="Nombre" name="nombre" ngModel>
+    <input type="text" class="form-control"  placeholder="Biografía" name="biografia" ngModel>
+    <button type="submit" class="btn btn-default" id="register"  >Register</button>
+  </form>-->
+</div>
